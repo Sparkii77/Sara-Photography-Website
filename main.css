@@ -1,0 +1,115 @@
+/* Font and color of the text in all pages */
+
+* {background-color:
+    rgba(223, 202, 208, 0.774);
+}
+
+* {color: 
+    rgb(216, 54, 130);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Space+Grotesk:wght@300&display=swap');
+
+* {font-family: 
+    'Quicksand', sans-serif;
+}
+
+
+/* Not sure what this is for */
+.container{
+    width: 80%; 
+    margin: 0%;
+}
+
+header::after {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+
+/* designing the icon */
+.icon{ 
+    float: left;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 2% ;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.icon:hover{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+/* designing the navigation bar */
+nav{
+    float: right;
+    margin-right: 60%;
+}
+
+nav ul{ 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font: bold;
+}
+
+nav a:hover {
+    color:  rgb(216, 54, 130);
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color:rgb(216, 54, 130);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 150ms;
+}
+
+nav a:hover::before{
+    width: 100%
+}
+
+
+/* Alligning the text */
+div.text{
+    padding: 50px;
+}
+
+
+/* Designing the gallery */
+.Gallery{
+    margin: 10px 50px;
+}
+
+.Gallery img{
+    transition: 1s;
+    padding: 15px;
+    width: 200px
+}
+
+.Gallery img:hover {
+    filter: grayscale(80%);
+    transform: scale(1.1);
+}
